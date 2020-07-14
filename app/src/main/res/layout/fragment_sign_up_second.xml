@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_user_name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/et_style_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:hint="@string/attherate" />
+
+            <TextView
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/please_enter_your_first_and_last_name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_confirm_code"
+                style="@style/et_style_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:hint="@string/full_name" />
+
+            <TextView
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/please_enter_your_password"
+                android:textStyle="bold" />
+
+            <com.poovam.pinedittextfield.CirclePinField
+                android:id="@+id/pin_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:textSelectHandle="@drawable/text_handle"
+                android:textSize="14sp"
+                app:circleRadius="14dp"
+                app:fieldBgColor="@color/Silver"
+                app:fillerColor="@color/colorPrimary"
+                app:noOfFields="4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_main"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/blue_round_bg"
+            android:fontFamily="@font/helvetica_neue"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</layout>

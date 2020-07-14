@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  <androidx.core.widget.NestedScrollView
+              android:id="@+id/scrollView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_search"
+                app:searchIcon="@drawable/iv_search" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/search_view"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+
+                    <TextView
+                        style="@style/txt_style_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_search"
+                        android:padding="10dp"
+                        android:text="YouTube" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_featured"
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horizontal_view"
+                android:layout_marginTop="15dp"
+                android:text="Featured"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_featured"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="15dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="8dp"
+                        app:cardBackgroundColor="@color/app_dark_grey"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp">
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="15dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="8dp"
+                        app:cardBackgroundColor="@color/app_dark_grey"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="15dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="8dp"
+                        app:cardBackgroundColor="@color/app_dark_grey"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp">
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="15dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="8dp"
+                        app:cardBackgroundColor="@color/app_dark_grey"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="10dp">
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_categorised"
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horizontal_view2"
+                android:layout_marginTop="15dp"
+                android:text="Categories"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_categorised"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:columnCount="2"
+                        android:scrollbars="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="5dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:elevation="8dp"
+                            app:cardBackgroundColor="@color/app_dark_grey"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="10dp" />
+
+                    </GridLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <!--        </androidx.core.widget.NestedScrollView>-->
+    </RelativeLayout>
+</layout>

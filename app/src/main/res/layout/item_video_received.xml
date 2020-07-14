@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_presented"
+        style="@style/txt_style_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="You presented a video"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_presented"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_load_more"
+        android:backgroundTint="@color/Pink"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/iv_player" />
+
+        <TextView
+            style="@style/txt_style_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_play"
+            android:text="Video"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

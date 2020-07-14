@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.FirstSplashFragment">
+
+        <ImageView
+            android:id="@+id/iv_lady"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/iv_signup_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_lady"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txt_style_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/are_you_new_to_fusion"
+                android:textColor="#333333" />
+
+            <TextView
+                style="@style/txt_style_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="@string/fusion_is_an_entertainment"
+                android:textColor="#777883"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

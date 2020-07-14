@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_chat"
+                    style="@style/txt_style_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Fusion Chat"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:layout_below="@+id/tv_chat"
+                    android:layout_marginTop="30dp" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_btm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/scrollView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_round_bg"
+            android:backgroundTint="@color/LightGrey">
+
+            <ImageView
+                android:id="@+id/iv_attachment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_attachement" />
+
+            <EditText
+                style="@style/txt_style_grey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_toLeftOf="@id/iv_send"
+                android:layout_toRightOf="@+id/iv_attachment"
+                android:background="@null"
+                android:gravity="start|center_vertical"
+                android:text="Send a message..." />
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_send" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

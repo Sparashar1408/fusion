@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_load_more"
+    android:backgroundTint="@color/WhiteSmoke">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/txt_style_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fusion"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/txt_style_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Are you sure You are leaving the\nfusion now." />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height=".7dp"
+        android:layout_below="@id/ll_top"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_dark_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/txt_style_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Cancel"
+            android:textColor="@color/app_blue" />
+
+        <View
+            android:layout_width=".8dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_dark_grey" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            style="@style/txt_style_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Exit Now"
+            android:textColor="@color/app_blue" />
+
+    </LinearLayout>
+</RelativeLayout>
